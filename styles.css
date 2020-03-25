@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  header h1 {
+    margin: 50px 0 30px 0;
+    font-size: 40px;
+  }
+  
+  header p {
+    font-size: 20px;
+  }
+  
+  .pads {
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+  }
+  
+  .pads > div {/*select all the divs inside the pads we use > */
+    width: 100px;
+    height: 100px;
+    flex: 1;
+  } /*cover all the available area */
+  
+  .pad1 {
+    background-color: lightgoldenrodyellow;
+  }
+  .pad2 {
+    background-color: lightpink;
+  }
+  .pad3 {
+    background-color: lightsalmon;
+  }
+  .pad4 {
+    background-color: lightskyblue;
+  }
+  .pad5 {
+    background-color: lightslategrey;
+  }
+  .pad6 {
+    background-color: lightseagreen;
+  }
+  
+  @keyframes jump {
+    0% {
+      bottom: 0%;
+      left: 20%;
+    }
+    50% {
+      bottom: 50%;
+      left: 50%;
+    }
+    100% {
+      bottom: 0%;
+      left: 80%;
+    }
+  }
+  
+   .visual > div{position: absolute; /* the div created in js */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  z-index: -1;}
+  
